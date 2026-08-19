@@ -91,77 +91,11 @@ If an admin module is implemented:
 
 ## System Architecture
 
-```text
-                         User
-                          │
-                          ▼
-                 ┌─────────────────┐
-                 │   React.js      │
-                 │    Frontend     │
-                 └────────┬────────┘
-                          │
-                          │ REST API
-                          ▼
-                 ┌─────────────────┐
-                 │   Express.js    │
-                 │   + Node.js     │
-                 └────────┬────────┘
-                          │
-                          │ Mongoose
-                          ▼
-                 ┌─────────────────┐
-                 │    MongoDB      │
-                 │    Database     │
-                 └─────────────────┘
+<img width="320" height="480" alt="image" src="https://github.com/user-attachments/assets/46575660-6a48-439d-b45e-d1b5e638b03f" />
 
-                          │
-                          ▼
-                 Recommendation Logic
-                          │
-             ┌────────────┼────────────┐
-             ▼            ▼            ▼
-          Budget        Specs       Usage
-             │            │            │
-             └────────────┼────────────┘
-                          ▼
-                   Recommended
-                      Laptops
-```
 
-## Recommendation Flow
 
-```text
-User
- │
- ▼
-Enter Requirements
- │
- ├── Budget
- ├── Processor
- ├── RAM
- ├── Storage
- ├── GPU
- └── Usage
- │
- ▼
-Backend receives requirements
- │
- ▼
-Laptop data retrieved from MongoDB
- │
- ▼
-Requirements compared with specifications
- │
- ▼
-Matching laptops identified
- │
- ▼
-Laptops ranked/recommended
- │
- ▼
-Results displayed in React
-```
-
+    
 ## Project Structure
 
 ```text
