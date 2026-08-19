@@ -89,7 +89,7 @@ If an admin module is implemented:
 * GitHub
 * MongoDB Atlas / MongoDB Compass
 
-## System Architecture
+## Work Flow
 
 <img width="320" height="480" alt="image" src="https://github.com/user-attachments/assets/46575660-6a48-439d-b45e-d1b5e638b03f" />
 
